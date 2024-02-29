@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 
 const Password = () => {
+
   const [length, setLength] = useState(8);
   const [numberAlloewd, setNumberAllowed] = useState(false);
   const [charAlloewd, setCharAllowed] = useState(false);

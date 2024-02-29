@@ -14,6 +14,8 @@ import About from "./components/about/About.jsx";
 import Contact from "./components/contact/Contact.jsx";
 import User from "./components/user/User.jsx";
 import Github, { githubLoaderInfo } from "./components/github/Github.jsx";
+import SignIn from "./components/sign-in/SignIn.jsx";
+import SignUp from './components/signup/SignUp.jsx'
 
 // const router = createBrowserRouter([
 //   {
@@ -48,10 +50,12 @@ const router = createBrowserRouter(
         path="github"
         element={<Github />}
       />
+      <Route path="/signin" element={<SignIn />} />
+      <Route path="/signup" element={<SignUp />} />
     </Route>
   )
 );
-// console.log("useloaderino",githubLoaderInfo())
+console.log("useloaderino",githubLoaderInfo)
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
